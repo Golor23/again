@@ -1,14 +1,7 @@
-// script.js - controls navigation, job listing and modal behavior
-
-// ---------- CONFIGURABLE DATA ----------
-// To add a new job, add an object to the `jobs` array below.
-// Each job object may include: title, img (relative path), description, contact.
-// Example:
-// { title: 'Baker', img: 'images/baker.jpg', description: 'Bake bread', contact: 'Name - Phone' }
 const jobs = [
     {
         title: 'Driver',
-        img: 'Driver.Webp',
+        img: 'Driver.png',
         description: 'Responsible for transporting goods safely.',
         contact: 'Mr. Santos - 0917-555-1234',
     },
@@ -26,7 +19,6 @@ const jobs = [
     },
 ];
 
-// ---------- NAVIGATION HANDLING ----------
 const sections = document.querySelectorAll('.section');
 const navButtons = document.querySelectorAll('nav .nav-btn');
 
@@ -37,7 +29,6 @@ navButtons.forEach(btn => {
     });
 });
 
-// showSection will hide all sections and make the named one visible
 function showSection(id) {
     sections.forEach(sec => {
         if (sec.id === id) {
@@ -54,11 +45,11 @@ function showSection(id) {
     }
 }
 
-// ---------- JOB LISTING ----------
+
 const jobListElem = document.getElementById('jobList');
 
 function populateJobs() {
-    // clear previous content
+   
     jobListElem.innerHTML = '';
 
     jobs.forEach((job, index) => {
@@ -97,23 +88,11 @@ closeModalBtn.addEventListener('click', () => {
     jobModal.classList.add('hidden');
 });
 
-// Clicking outside modal content should also close it
+
 jobModal.addEventListener('click', e => {
     if (e.target === jobModal) {
         jobModal.classList.add('hidden');
     }
 });
 
-// ---------- UTILITY NOTES ----------
-// To add a new job:
-// 1. Place the job image into the /images folder.
-// 2. Add a new object to the `jobs` array above with the correct
-//    `img` path and other properties.
-// 3. When the "Find a Job" section is shown, it will update automatically.
-//
-// To change contact information per job, simply update the `contact` field
-// in the corresponding object.
-//
-// No other code modification is required; the layout and modal logic are
-// reusable for any number of jobs.
 
