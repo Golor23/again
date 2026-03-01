@@ -1,4 +1,3 @@
-/* Global resets and typography */
 * {
     box-sizing: border-box;
 }
@@ -10,7 +9,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header and navigation */
 header {
     background-color: #0056b3;
     color: #fff;
@@ -39,7 +37,7 @@ nav .nav-btn:focus {
     text-decoration: underline;
 }
 
-/* Sections */
+
 .section {
     padding: 40px 20px;
     max-width: 800px;
@@ -52,7 +50,7 @@ nav .nav-btn:focus {
     font-size: 1.2rem;
 }
 
-/* Button styles */
+
 .primary-btn,
 .secondary-btn {
     padding: 10px 20px;
@@ -75,7 +73,7 @@ nav .nav-btn:focus {
     opacity: 0.9;
 }
 
-/* Job grid */
+
 .job-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -114,7 +112,7 @@ nav .nav-btn:focus {
     color: #555;
 }
 
-/* Modal styling */
+
 .modal {
     position: fixed;
     top: 0;
@@ -163,7 +161,7 @@ nav .nav-btn:focus {
     margin-top: 0;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -176,3 +174,4 @@ nav .nav-btn:focus {
         height: 120px;
     }
 }
+
