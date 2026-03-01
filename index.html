@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PESO Mataas na Kahoy</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <img src="images/logo_2-removebg-preview.png" alt="PESO logo" class="logo" />
+        <nav>
+            <button data-target="home" class="nav-btn">Home</button>
+            <button data-target="about" class="nav-btn">About PESO</button>
+            <button data-target="jobs" class="nav-btn">Find a Job</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h1>Welcome to PESO (Mataas na Kahoy)</h1>
+            <p class="lead">
+                The Public Employment Service Office provides free employment and
+                training assistance to jobseekers and employers.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section hidden">
+            <h2>About PESO</h2>
+            <p>
+                The Public Employment Service Office (PESO) is a government-funded
+                agency that assists citizens in finding employment opportunities
+                and provides counselling, training, and career guidance.
+            </p>
+            <h3>Mission</h3>
+            <p>
+                To provide accessible job placement services, promote the welfare
+                of the workforce, and support economic development in the community.
+            </p>
+            <h3>Contact</h3>
+            <p>Office Address: Barangay Hall Compound, Mataas na Kahoy</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: peso.mataasnakahoy@example.com</p>
+        </section>
+
+        <!-- Jobs Section -->
+        <section id="jobs" class="section hidden">
+            <h2>Available Jobs</h2>
+            <div id="jobList" class="job-grid">
+                <!-- job cards injected by script.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- modal for job details -->
+    <div id="jobModal" class="modal hidden">
+        <div class="modal-content">
+            <button id="closeModal">Close</button>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="" />
+            <p id="modalDesc"></p>
+            <div class="contact">
+                <h4>Contact Personnel</h4>
+                <p id="modalContact"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
