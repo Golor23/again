@@ -8,7 +8,7 @@
 const jobs = [
     {
         title: 'Driver',
-        img: 'images/Driver.Webp',
+        img: 'Driver.Webp',
         description: 'Responsible for transporting goods safely.',
         contact: 'Mr. Santos - 0917-555-1234',
     },
@@ -116,3 +116,4 @@ jobModal.addEventListener('click', e => {
 //
 // No other code modification is required; the layout and modal logic are
 // reusable for any number of jobs.
+
