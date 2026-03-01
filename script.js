@@ -7,13 +7,13 @@ const jobs = [
     },
     {
         title: 'Cook',
-        img: 'cook.jpg',
+        img: 'Driver.png',
         description: 'Prepare meals according to instructions.',
         contact: 'Ms. Reyes - 0917-555-5678',
     },
     {
         title: 'Cashier',
-        img: 'cashier.jpg',
+        img: 'Driver.png',
         description: 'Handle customer transactions.',
         contact: 'Mr. Cruz - 0917-555-9999',
     },
@@ -94,6 +94,7 @@ jobModal.addEventListener('click', e => {
         jobModal.classList.add('hidden');
     }
 });
+
 
 
 
