@@ -1,19 +1,19 @@
 const jobs = [
     {
         title: 'Driver',
-        img: './Driver.png',
+        img: 'Driver.png',
         description: 'Responsible for transporting goods safely.',
         contact: 'Mr. Santos - 0917-555-1234',
     },
     {
         title: 'Cook',
-        img: 'images/cook.jpg',
+        img: 'cook.jpg',
         description: 'Prepare meals according to instructions.',
         contact: 'Ms. Reyes - 0917-555-5678',
     },
     {
         title: 'Cashier',
-        img: 'images/cashier.jpg',
+        img: 'cashier.jpg',
         description: 'Handle customer transactions.',
         contact: 'Mr. Cruz - 0917-555-9999',
     },
@@ -94,6 +94,7 @@ jobModal.addEventListener('click', e => {
         jobModal.classList.add('hidden');
     }
 });
+
 
 
 
