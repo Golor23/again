@@ -39,7 +39,7 @@ function showSection(id) {
             sec.classList.remove('active');
         }
     });
-    // When showing jobs section, make sure the list is populated
+    
     if (id === 'jobs') {
         populateJobs();
     }
@@ -67,7 +67,6 @@ function populateJobs() {
     });
 }
 
-// ---------- MODAL ----------
 const jobModal = document.getElementById('jobModal');
 const modalImage = document.getElementById('modalImage');
 const modalTitle = document.getElementById('modalTitle');
@@ -94,6 +93,7 @@ jobModal.addEventListener('click', e => {
         jobModal.classList.add('hidden');
     }
 });
+
 
 
 
