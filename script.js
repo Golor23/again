@@ -1,7 +1,7 @@
 const jobs = [
     {
         title: 'Driver',
-        img: '/again/Driver.png',
+        img: 'README.md',
         description: 'Responsible for transporting goods safely.',
         contact: 'Mr. Santos - 0917-555-1234',
     },
@@ -93,6 +93,7 @@ jobModal.addEventListener('click', e => {
         jobModal.classList.add('hidden');
     }
 });
+
 
 
 
